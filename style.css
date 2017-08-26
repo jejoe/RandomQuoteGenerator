@@ -1,0 +1,39 @@
+p {
+  font-family: Bellefair;
+  font-size: 2em;
+ 
+}
+
+h1 {
+  font-family: Audiowide;
+  font-size: 4em;
+  background-color: #fde243;
+}
+body {
+  text-align:center;
+  background-color: #ffb7b7;
+}
+#box{
+  border-radius:3px;
+  position:relative;
+  margin:8% auto auto auto;
+  width:450px;
+  padding:40px 50px;
+  display:table;
+   background-color: #e95464;
+
+}
+
+button{
+  padding: 8px 18px 6px 18px;
+      margin-top:30px;
+}
+#tweetQuote{
+     padding: 8px 18px 6px 18px;
+      margin-top:30px;
+        text-align:center;
+        font-size:2em;
+        margin-right:5px;
+        height:30px;
+        width:40px;
+}

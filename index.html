@@ -1,0 +1,33 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var a = ["In the end, it's not going to matter how many breaths you took, but how many moments took your breath away- shing xiong","When life gives you a hundred reasons to cry, show life that you have a thousand reasons to smile.- Unknown","Never tell your problems to anyone...20% don't care and the other 80% are glad you have them.- Lou Holtz","Be who you are and say what you feel because those who mind don't matter and those who matter don't mind.- Dr. Seuss","Advice is what we ask for when we already know the answer but wish we didn't.- Erica Jong"];
+  
+$(document).ready(function(){
+    $("#btn1").click(function(){
+      var maximum = 5;
+      var minimum = 0 ;
+    var randomnumber = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+      var current = a[randomnumber];
+        $("#test1").text(current);
+      	$('#tweetQuote').attr('href', 'https://twitter.com/intent/tweet?text='+current).attr('target', '_blank');
+      
+    });
+});
+  
+</script>
+<link href="https://fonts.googleapis.com/css?family=Audiowide|Bellefair" rel="stylesheet">
+</head>
+<body>
+  <h1>Random Quote Generator </h1> 
+  <div id = "box">
+<p id="test1"></p>
+  </div>
+  <div id ="buttonType">
+<button id="btn1">Generate Quote!</button>
+  <a id="tweetQuote" class="btn btn-info" href="#"><i class="fa fa-twitter"></i></a>
+  </div>
+
+</body>
+</html>
